@@ -10,6 +10,3 @@ class Pokemon(Base):
     name = Column(String)
     type = Column(String)
     created_at = Column(DateTime, default=func.now())
-
-
-#### PAREI 36:00

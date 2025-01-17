@@ -3,7 +3,7 @@
 from pydantic import BaseModel
 
 class PokemonSchema(BaseModel):
-    name: int
+    name: str
     type: str
 
     class Config:
