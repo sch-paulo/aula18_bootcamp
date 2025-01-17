@@ -26,7 +26,9 @@ def pegar_pokemon(id: int)   :
     for type_info in data_types:
         types_list.append(type_info['type']['name'])
     types = ', '.join(types_list)
-    return data['name'], types
 
+    return PokemonSchema(name=data['name'], type=types)
 
-###### PAREI 27:00
+if __name__ == "__main__":
+    for id in range(27, 32):
+        print(pegar_pokemon(id))
